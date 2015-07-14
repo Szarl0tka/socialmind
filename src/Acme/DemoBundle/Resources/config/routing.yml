@@ -1,5 +1,5 @@
 _welcome:
-    pattern:  /
+    pattern:  /demo
     defaults: { _controller: AcmeDemoBundle:Welcome:index }
 
 _demo_secured:
@@ -10,3 +10,4 @@ _demo:
     resource: "@AcmeDemoBundle/Controller/DemoController.php"
     type:     annotation
     prefix:   /demo
+

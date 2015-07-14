@@ -1,0 +1,17 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+{% include "FOSUserBundle:Profile:show_content.html.twig" %}
+
+{% endblock fos_user_content %}
+
+{% block users_list %}
+<h1>Hello</h1>
+<div class="fos_user_group_list">
+   {# <ul>
+    {% for the_user in users %}
+        <li>{{ the_user.username }}</a></li>
+    {% endfor %}
+    </ul>#}
+</div>
+{% endblock users_list %}

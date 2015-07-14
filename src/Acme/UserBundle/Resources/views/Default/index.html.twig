@@ -1,1 +1,11 @@
-Hello {{ name }}!
+Yo 
+{{user.username}} !
+
+
+<div class="fos_user_group_list">
+    <ul>
+    {% for game_user in game_users %}
+        <li><a href="{{ path('acme_game_user_show', {'gameUserName': game_user.username} ) }}">{{ game_user.username }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
