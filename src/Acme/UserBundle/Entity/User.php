@@ -19,6 +19,27 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\Column(name="answer_1", type="integer")
+     */
+    protected $answer1;
+
+    /**
+     * @ORM\Column(name="answer_2", type="integer")
+     */
+    protected $answer2;
+
+    /**
+     * @ORM\Column(name="answer_3", type="integer")
+     */
+    protected $answer3;
+
+    /**
+     * @ORM\Column(name="answer_4", type="integer")
+     */
+    protected $answer4;
+
+
     public function __construct()
     {
         parent::__construct();
